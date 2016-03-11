@@ -1,0 +1,33 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.indexTable{
+    width: 315px;
+    margin: auto;
+
+}
+
+.indexTable td, .indexTable th{
+    border-collapse:collapse;
+    border: 1px solid black;
+}
+.container {
+    width: 800px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.calculator h1{
+    width: 550px;
+    margin: auto;
+}
+
+.formCalc {
+    width: 30%;
+    margin: auto;
+}
