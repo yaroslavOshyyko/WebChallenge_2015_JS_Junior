@@ -23,12 +23,38 @@ function color(result){
     var row = 1;
     for (var i = 0; i < indexes.length-1; i++){
         if((result >= indexes[i]) && (result <= indexes[i+1])){
-            row = i+2;
+            row = i+2   ;
             break;
         }
     }
 
     var colorTd = tr[row].getElementsByTagName("td");
-    colorTd[0].style.backgroundColor = "grey";
-    colorTd[1].style.backgroundColor = "grey";
+
+
+    switch (row){
+        case 1:
+            colorTd[0].style.backgroundColor = "#ffa700";
+            colorTd[1].style.backgroundColor = "#ffa700";
+            break;
+        case 2:
+            colorTd[0].style.backgroundColor = "#47e508";
+            colorTd[1].style.backgroundColor = "#47e508";
+            break;
+        case 3:
+            colorTd[0].style.backgroundColor = "#ffb400";
+            colorTd[1].style.backgroundColor = "#ffb400";
+            break;
+        case 4:
+            colorTd[0].style.backgroundColor = "#ff8100";
+            colorTd[1].style.backgroundColor = "#ff8100";
+            break;
+        case 5:
+            colorTd[0].style.backgroundColor = "#ff4d00";
+            colorTd[1].style.backgroundColor = "#ff4d00";
+            break;
+        case 6:
+            colorTd[0].style.backgroundColor = "#ff0000";
+            colorTd[1].style.backgroundColor = "#ff0000";
+            break;
+    }
 }
